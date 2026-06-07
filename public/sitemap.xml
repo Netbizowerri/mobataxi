@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage — Primary URL -->
+  <url>
+    <loc>https://mobataxi.ca/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <!-- Alternate language/region -->
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://mobataxi.ca/" />
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://mobataxi.ca/" />
+    <!-- Key page images for Google Image Sitemap -->
+    <image:image>
+      <image:loc>https://i.ibb.co/gZc6XcwN/MOBA-TAXI.jpg</image:loc>
+      <image:title>Moba Taxi — Canadian Ride-Sharing Logo</image:title>
+      <image:caption>Moba Taxi, proudly Canadian local ride-sharing serving Newfoundland and Labrador</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/7xvZD2gd/Whats-App-Image-2026-06-06-at-5-11-31-PM.jpg</image:loc>
+      <image:title>Moba Taxi Service — Ride in Comfort</image:title>
+      <image:caption>Safe, reliable Moba Taxi rides across Newfoundland and Labrador, Canada</image:caption>
+    </image:image>
+    <mobile:mobile/>
+  </url>
+
+</urlset>

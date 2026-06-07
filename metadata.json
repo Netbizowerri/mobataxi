@@ -1,0 +1,6 @@
+{
+  "name": "Moba Taxi",
+  "description": "Premium Canadian ride-sharing landing page for drivers and riders. Safe, reliable, and built to grow local communities in Newfoundland & Labrador and across Canada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

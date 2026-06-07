@@ -1,0 +1,18 @@
+# Moba Taxi — robots.txt
+# https://www.robotstxt.org/
+
+User-agent: *
+Allow: /
+
+# Block access to development & internal directories
+Disallow: /src/
+Disallow: /.agents/
+Disallow: /.env
+Disallow: /tests/
+Disallow: /node_modules/
+
+# Sitemap location
+Sitemap: https://mobataxi.ca/sitemap.xml
+
+# Crawl delay (optional, courtesy to server)
+Crawl-delay: 1
