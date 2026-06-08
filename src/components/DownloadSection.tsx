@@ -88,14 +88,14 @@ export default function DownloadSection() {
               <h2 className="font-sans font-extrabold text-3xl sm:text-4xl text-white tracking-tight leading-none">
                 {currentApp.title}
               </h2>
-              <p className="text-zinc-300 font-light text-base leading-relaxed">
+              <p className="text-white font-light text-lg leading-relaxed">
                 {currentApp.description}
               </p>
 
               {/* Verified Checklist */}
               <div className="space-y-3.5 pt-1">
                 {currentApp.checklist.map((item, index) => (
-                  <div key={index} className="flex items-center gap-3 text-zinc-300 text-sm">
+                  <div key={index} className="flex items-center gap-3 text-white text-base">
                     <CheckCircle className="w-5 h-5 text-emerald-400 shrink-0" />
                     <span>{item}</span>
                   </div>

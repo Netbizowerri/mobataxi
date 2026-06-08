@@ -62,7 +62,7 @@ export default function RiderSection() {
                   Anywhere across Canada
                 </span>
               </h2>
-              <p className="mt-4 font-sans text-zinc-300 leading-relaxed font-light text-base sm:text-lg">
+              <p className="mt-4 font-sans text-white leading-relaxed font-light text-lg sm:text-xl">
                 Need to reach the airport, medical clinics, or catch up with friends downtown? Moba Taxi immediately matches you with background-screened, fully certified local Canadian operators.
               </p>
             </div>
@@ -83,7 +83,7 @@ export default function RiderSection() {
                   </div>
                   <div>
                     <h4 className="text-white font-sans font-bold text-base">{feature.title}</h4>
-                    <p className="text-zinc-400 text-sm font-light mt-1 leading-relaxed">{feature.description}</p>
+                    <p className="text-white/90 text-base font-light mt-1 leading-relaxed">{feature.description}</p>
                   </div>
                 </motion.div>
               ))}

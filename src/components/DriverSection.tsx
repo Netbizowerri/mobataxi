@@ -32,7 +32,7 @@ export default function DriverSection() {
                   Start Earning Cash
                 </span>
               </h2>
-              <p className="mt-4 font-sans text-zinc-300 leading-relaxed font-light text-base sm:text-lg">
+              <p className="mt-4 font-sans text-white leading-relaxed font-light text-lg sm:text-xl">
                 Turn your car into consistent income. Join a fast-growing, homegrown Canadian ride-sharing network, set your own working hours, and retain most of your fares.
               </p>
             </div>
@@ -53,7 +53,7 @@ export default function DriverSection() {
                   </div>
                   <div>
                     <h4 className="text-white font-sans font-bold text-base">{benefit.title}</h4>
-                    <p className="text-zinc-400 text-sm font-light mt-1 leading-relaxed">{benefit.description}</p>
+                    <p className="text-white/90 text-base font-light mt-1 leading-relaxed">{benefit.description}</p>
                   </div>
                 </motion.div>
               ))}
@@ -69,7 +69,7 @@ export default function DriverSection() {
               </div>
               <ul className="space-y-2.5">
                 {DRIVER_REQUIREMENTS.map((req, idx) => (
-                  <li key={idx} className="flex items-start gap-2.5 text-zinc-300 text-sm">
+                  <li key={idx} className="flex items-start gap-2.5 text-white text-base">
                     <span className="block h-1.5 w-1.5 rounded-full bg-red-500 mt-2 shrink-0 animate-pulse" />
                     <span className="font-light">{req}</span>
                   </li>

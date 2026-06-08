@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Mail, ShieldAlert, CheckCircle, ArrowRight, User, Phone, MapPin, Car, HelpCircle, Trophy, Home, Smartphone, Navigation } from "lucide-react";
-import { CANADIAN_REGIONS } from "../data";
+import { CANADIAN_PROVINCES } from "../data";
 
 export default function DriverSignupForm() {
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     phone: "",
-    city: CANADIAN_REGIONS[0].name,
+    province: CANADIAN_PROVINCES[0],
     licenseClass: "Class 4 Professional License",
     vehicleInfo: "",
     backgroundApproved: false,
@@ -28,7 +28,7 @@ export default function DriverSignupForm() {
       fullName: "",
       email: "",
       phone: "",
-      city: CANADIAN_REGIONS[0]?.name ?? "",
+      province: CANADIAN_PROVINCES[0],
       licenseClass: "Class 4 Professional License",
       vehicleInfo: "",
       backgroundApproved: false,
@@ -56,7 +56,7 @@ export default function DriverSignupForm() {
       `FULL NAME: ${formData.fullName}\n` +
       `EMAIL ADDRESS: ${formData.email}\n` +
       `PHONE NUMBER: ${formData.phone}\n` +
-      `OPERATING CITY: ${formData.city}\n` +
+      `PROVINCE: ${formData.province}\n` +
       `LICENSE CLASSIFICATION: ${formData.licenseClass}\n` +
       `VEHICLE INFO (YEAR/MAKE/MODEL): ${formData.vehicleInfo}\n` +
       `CLEAN RECORD & BACKGROUND CHECK: ${formData.backgroundApproved ? "YES - Authorized" : "NO - Require Review"}\n\n` +
@@ -88,7 +88,7 @@ export default function DriverSignupForm() {
             fullName: formData.fullName,
             email: formData.email,
             phone: formData.phone,
-            city: formData.city,
+            province: formData.province,
             licenseClass: formData.licenseClass,
             vehicleInfo: formData.vehicleInfo,
             backgroundApproved: formData.backgroundApproved ? "Authorized" : "Not Authorized",
@@ -132,7 +132,7 @@ export default function DriverSignupForm() {
             <h2 className="font-sans font-extrabold text-3xl sm:text-4xl text-white tracking-tight leading-tight">
               Ready to Start Earning?
             </h2>
-            <p className="text-zinc-300 font-light text-base leading-relaxed">
+            <p className="text-white font-light text-lg leading-relaxed">
               Join Moba Taxi today and become part of a fast-growing, homegrown Canadian ride-sharing network. Apply now, get cleared, and start driving.
             </p>
 
@@ -141,7 +141,7 @@ export default function DriverSignupForm() {
                 <Trophy className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-white text-xs font-bold uppercase tracking-wider font-mono">The 18% Platform Fee Cap</h4>
-                  <p className="text-zinc-400 text-xs mt-1 leading-normal">Our transparent operational limits ensure you retain the majority share of standard passenger receipts.</p>
+                  <p className="text-white/80 text-sm mt-1 leading-normal">Our transparent operational limits ensure you retain the majority share of standard passenger receipts.</p>
                 </div>
               </div>
 
@@ -149,12 +149,12 @@ export default function DriverSignupForm() {
                 <Mail className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-white text-xs font-bold uppercase tracking-wider font-mono">Direct Communication Channel</h4>
-                  <p className="text-zinc-400 text-xs mt-1 leading-normal">Submit your inquiry and receive tailored feedback within 24 hours directly from our local vetting coordinators.</p>
+                  <p className="text-white/80 text-sm mt-1 leading-normal">Submit your inquiry and receive tailored feedback within 24 hours directly from our local vetting coordinators.</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-amber-500/5 p-4 rounded-2xl border border-amber-500/10 text-xs text-zinc-400 flex items-start gap-2.5">
+            <div className="bg-amber-500/5 p-4 rounded-2xl border border-amber-500/10 text-sm text-white/80 flex items-start gap-2.5">
               <ShieldAlert className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
               <span>By submitting, you represent that your uploaded licensing class remains active and legitimate within Canadian provincial transport registry structures.</span>
             </div>
@@ -233,17 +233,17 @@ export default function DriverSignupForm() {
                     <div className="space-y-1.5">
                       <label className="text-zinc-300 text-xs font-mono uppercase tracking-wider flex items-center gap-1.5">
                         <MapPin className="w-3.5 h-3.5 text-zinc-500" />
-                        Preferred City (NL)
+                        Province
                       </label>
                       <select
-                        name="city"
-                        value={formData.city}
+                        name="province"
+                        value={formData.province}
                         onChange={handleInputChange}
                         className="w-full bg-[#0c0d10] border border-zinc-800 focus:border-amber-500 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none cursor-pointer transition"
                       >
-                        {CANADIAN_REGIONS.map((city) => (
-                          <option key={city.name} value={city.name} className="bg-[#090A0C]">
-                            {city.name}, NL
+                        {CANADIAN_PROVINCES.map((province) => (
+                          <option key={province} value={province} className="bg-[#090A0C]">
+                            {province}
                           </option>
                         ))}
                       </select>
@@ -359,7 +359,7 @@ export default function DriverSignupForm() {
                   <div className="space-y-2">
                     <h4 className="text-white text-xl font-sans font-bold">Inquiry Sent Successfully!</h4>
                     <p className="text-zinc-300 text-sm max-w-[450px] mx-auto leading-normal">
-                      Thank you, <strong className="text-white">{formData.fullName}</strong>. Your driver profile is logged for <strong className="text-white">{formData.city}, NL</strong>.
+                      Thank you, <strong className="text-white">{formData.fullName}</strong>. Your driver profile is logged for <strong className="text-white">{formData.province}</strong>.
                     </p>
                   </div>
                   <button
@@ -429,7 +429,7 @@ export default function DriverSignupForm() {
                 <div className="space-y-1.5 pt-0.5">
                   <div className="flex justify-between">
                     <span className="text-zinc-500">Service Area:</span>
-                    <span className="text-white font-semibold">{formData.city}, NL</span>
+                    <span className="text-white font-semibold">{formData.province}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-zinc-500">Contact Phone:</span>

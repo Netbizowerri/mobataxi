@@ -26,11 +26,11 @@ export default function Footer() {
               />
             </a>
             
-            <p className="text-zinc-400 text-xs sm:text-sm font-light leading-relaxed max-w-md">
+            <p className="text-white text-sm sm:text-base font-light leading-relaxed max-w-md">
               Moba Taxi is a homegrown ride-sharing alternative platform proudly owned and operated by <strong className="text-zinc-200">MobaCity Integrated Services Inc.</strong> registered in Canada. We engineer local mobility solutions to sustain communities and expand regional driver opportunities.
             </p>
 
-            <div className="flex items-center gap-3 text-xs text-zinc-500">
+            <div className="flex items-center gap-3 text-sm text-white/70">
               <span>Class 4 Passenger Vetted Vetting System</span>
               <span>•</span>
               <span>Safety Bond Compliant 🇨🇦</span>
@@ -46,11 +46,11 @@ export default function Footer() {
                 Get in Touch
               </h4>
               <ul className="space-y-3">
-                <li className="flex items-center gap-2.5 text-zinc-400 hover:text-amber-400 text-xs transition duration-150">
+                <li className="flex items-center gap-2.5 text-white hover:text-amber-400 text-sm transition duration-150">
                   <Mail className="w-4 h-4 text-amber-500" />
                   <a href="mailto:contact@mobscityservice.ca">contact@mobscityservice.ca</a>
                 </li>
-                <li className="flex items-start gap-2.5 text-zinc-400 text-xs">
+                <li className="flex items-start gap-2.5 text-white text-sm">
                   <MapPin className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
                   <span>📍 Made in Canada 🇨🇦 <br />Serving Newfoundland & Labrador</span>
                 </li>
@@ -62,7 +62,7 @@ export default function Footer() {
               <h4 className="text-white text-xs font-mono uppercase tracking-widest font-bold">
                 Operating Cities (NL)
               </h4>
-              <ul className="grid grid-cols-2 gap-1.5 text-xs text-zinc-500">
+              <ul className="grid grid-cols-2 gap-1.5 text-sm text-white/70">
                 <li className="hover:text-amber-500 transition-colors cursor-pointer">St. John's</li>
                 <li className="hover:text-amber-500 transition-colors cursor-pointer">Mount Pearl</li>
                 <li className="hover:text-amber-500 transition-colors cursor-pointer">Corner Brook</li>
@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
 
         {/* Brand footer bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-zinc-500 text-xs">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-white/70 text-sm">
           
           <div className="flex flex-wrap items-center justify-center gap-2 text-center sm:text-left">
             <span>© {new Date().getFullYear()} Moba Taxi. Powered by MobaCity Integrated Services Inc. All Rights Reserved.</span>

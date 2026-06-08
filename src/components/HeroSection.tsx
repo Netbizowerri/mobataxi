@@ -53,7 +53,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
-                className="font-sans text-base sm:text-lg lg:text-xl text-zinc-300 max-w-2xl font-light leading-relaxed"
+                className="font-sans text-lg sm:text-xl lg:text-2xl text-white max-w-2xl font-light leading-relaxed"
               >
                 Join Moba Taxi today as a driver or rider. Safe, reliable, and built for <span className="text-white font-medium border-b border-amber-500 pb-0.5">Newfoundland & Labrador</span> — and expanding across Canada. Let’s make it grow together.
               </motion.p>
@@ -89,7 +89,7 @@ export default function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="flex flex-wrap items-center gap-y-3 gap-x-6 border-t border-zinc-900/60 pt-6 text-zinc-400 text-xs sm:text-sm font-mono uppercase tracking-wider"
+              className="flex flex-wrap items-center gap-y-3 gap-x-6 border-t border-zinc-900/60 pt-6 text-white/80 text-sm sm:text-base font-mono uppercase tracking-wider"
             >
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-amber-500" />

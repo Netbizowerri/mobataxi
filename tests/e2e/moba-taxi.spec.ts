@@ -20,7 +20,7 @@ async function fillDriverForm(page: Page) {
   await page.fill('input[name="fullName"]', "Jane Smith");
   await page.fill('input[name="email"]', "jane.smith@example.ca");
   await page.fill('input[name="phone"]', "+1 709 555-0188");
-  await page.selectOption('select[name="city"]', "St. John's");
+  await page.selectOption('select[name="province"]', "Newfoundland & Labrador");
   await page.selectOption('select[name="licenseClass"]', "Class 4 Professional License");
   await page.fill('input[name="vehicleInfo"]', "2020 Honda CR-V");
   await page.check('input[name="backgroundApproved"]');
@@ -230,7 +230,7 @@ test.describe("Flow 6 — Driver Signup Form Submission", () => {
     await expect(page.locator('input[name="fullName"]')).toBeVisible();
     await expect(page.locator('input[name="email"]')).toBeVisible();
     await expect(page.locator('input[name="phone"]')).toBeVisible();
-    await expect(page.locator('select[name="city"]')).toBeVisible();
+    await expect(page.locator('select[name="province"]')).toBeVisible();
     await expect(page.locator('select[name="licenseClass"]')).toBeVisible();
     await expect(page.locator('input[name="vehicleInfo"]')).toBeVisible();
     await expect(page.locator('input[name="backgroundApproved"]')).toBeVisible();
@@ -264,7 +264,7 @@ test.describe("Flow 6 — Driver Signup Form Submission", () => {
     await page.click('button#driver-signup-submit');
     
     await expect(page.locator("text=THANK YOU!")).toBeVisible({ timeout: 5000 });
-    await expect(page.locator("text=St. John's, NL").first()).toBeVisible();
+    await expect(page.locator("text=Newfoundland & Labrador").first()).toBeVisible();
     await expect(page.locator("text=Class 4 Professional License").first()).toBeVisible();
   });
 });

@@ -113,6 +113,22 @@ export const CANADIAN_REGIONS: CityRate[] = [
   },
 ];
 
+export const CANADIAN_PROVINCES = [
+  "Newfoundland & Labrador",
+  "Nova Scotia",
+  "New Brunswick",
+  "Prince Edward Island",
+  "Quebec",
+  "Ontario",
+  "Manitoba",
+  "Saskatchewan",
+  "Alberta",
+  "British Columbia",
+  "Yukon",
+  "Northwest Territories",
+  "Nunavut",
+];
+
 export const EXPANDING_PROVINCES = [
   { name: "Nova Scotia", status: "Coming Q3 2026", code: "NS" },
   { name: "New Brunswick", status: "Coming Q4 2026", code: "NB" },

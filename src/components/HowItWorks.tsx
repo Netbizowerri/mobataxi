@@ -74,7 +74,7 @@ export default function HowItWorks() {
           <h2 className="font-sans font-extrabold text-3xl sm:text-4xl text-white mt-4 tracking-tight">
             How Moba Taxi Works
           </h2>
-          <p className="text-zinc-400 font-light mt-4 text-base sm:text-lg">
+          <p className="text-white font-light mt-4 text-lg sm:text-xl">
             Whether you want to move smarter across town or turn your driving time into consistent cash, getting started is designed to be frictionless.
           </p>
 
@@ -134,7 +134,7 @@ export default function HowItWorks() {
                       <h3 className="font-sans font-extrabold text-xl text-white group-hover:text-amber-400 transition-colors duration-200">
                         {step.title}
                       </h3>
-                      <p className="text-zinc-400 text-sm font-light leading-relaxed">
+                      <p className="text-white/90 text-base font-light leading-relaxed">
                         {step.description}
                       </p>
                     </div>
@@ -165,7 +165,7 @@ export default function HowItWorks() {
               <span className="text-red-500">🍁</span>
               Homegrown Canadian Support
             </h4>
-            <p className="text-zinc-400 text-xs sm:text-sm font-light leading-relaxed">
+            <p className="text-white/80 text-sm sm:text-base font-light leading-relaxed">
               Have questions? Our support officers are based in NL to handle setup verification or rider services instantly.
             </p>
           </div>

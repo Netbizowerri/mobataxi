@@ -21,7 +21,7 @@ export default function WhyChooseUs() {
           <h2 className="font-sans font-extrabold text-3xl sm:text-4xl text-white mt-4 tracking-tight">
             Why Choose Moba Taxi?
           </h2>
-          <p className="text-zinc-400 font-light mt-4 text-base sm:text-lg">
+          <p className="text-white font-light mt-4 text-lg sm:text-xl">
             We are building a secure Canadian mobility network that connects local people, creates high-value local jobs, and reinvests in community safety.
           </p>
         </div>
@@ -38,10 +38,10 @@ export default function WhyChooseUs() {
               <h3 className="font-sans font-extrabold text-2xl text-white leading-tight">
                 Our Vision: Empowering Local Canadian Mobility
               </h3>
-              <p className="text-zinc-300 font-light text-base leading-relaxed">
+              <p className="text-white font-light text-lg leading-relaxed">
                 We are more than a ride-hailing app. Moba Taxi is engineering a robust, nationwide transportation network that keeps safety strict, rewards hard-working drivers, and ensures fares remain local and affordable. 
               </p>
-              <p className="text-zinc-400 font-light text-sm leading-relaxed">
+              <p className="text-white/80 font-light text-base leading-relaxed">
                 Every booking made inside Newfoundland & Labrador assists in sustaining local employment and supporting families across local towns. Let’s make it grow together.
               </p>
             </div>
@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
               <h3 className="font-sans font-extrabold text-xl text-white">
                 Proudly Made in Canada
               </h3>
-              <p className="text-zinc-400 font-light text-sm leading-relaxed">
+              <p className="text-white font-light text-base leading-relaxed">
                 Enjoy a local ride-sharing option owned, developed, and maintained right here in Canada. We operate within complete compliance of all regional municipal bylaws, ensuring strict adherence to the Canadian safety framework.
               </p>
             </div>
@@ -76,8 +76,8 @@ export default function WhyChooseUs() {
               <h3 className="font-sans font-extrabold text-xl text-white">
                 Safe & Verified Transport
               </h3>
-              <p className="text-zinc-400 font-light text-sm leading-relaxed">
-                We take commuter safety with absolute seriousness. Every single active Moba partner possesses a verified Class 4 professional driver’s license, a clean police certificate, and drives a certified inspection-passed vehicle.
+              <p className="text-white font-light text-base leading-relaxed">
+                We take commuter safety with absolute seriousness. Every single active Moba partner possesses a verified Class 4 professional driver's license, a clean police certificate, and drives a certified inspection-passed vehicle.
               </p>
             </div>
 
@@ -96,7 +96,7 @@ export default function WhyChooseUs() {
               <h3 className="font-sans font-extrabold text-xl text-white">
                 Built for Local Communities
               </h3>
-              <p className="text-zinc-400 font-light text-sm leading-relaxed">
+              <p className="text-white font-light text-base leading-relaxed">
                 Unlike global gig-economy giants, Moba is fine-tuned to Newfoundland & Labrador's regional transit schedules. We provide specialized coverage in St. John's, Mount Pearl, CBS, and Corner Brook.
               </p>
             </div>
@@ -115,7 +115,7 @@ export default function WhyChooseUs() {
               <h3 className="font-sans font-extrabold text-xl text-white">
                 Opportunity to Earn & Grow
               </h3>
-              <p className="text-zinc-400 font-light text-sm leading-relaxed">
+              <p className="text-white font-light text-base leading-relaxed">
                 Take control of your personal income schedule. Driver payouts occurs on a guaranteed, rapid weekly cycle with straightforward 82% platform payout metrics. We believe if you do the driving, you should keep the profit.
               </p>
             </div>
